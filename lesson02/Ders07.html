@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Email: <input type="email" name="email" id="email2"> <br>
+        Parola: <input type="password" name="password" id="password"> <br>
+
+        <input type="submit" value="Kaydet"><br>
+        <input type="reset" value="Sıfırla"><br>
+
+
+        <input type="button" value="FONKSİYONU ÇALIŞTIR" onclick="ButunaBasildi()"><br>
+
+ 
+    </form>
+
+    <form>
+        Hangi ilde yaşıyorsun <br>
+        <select  name="il" size="3">
+            <option >Batman</option>
+            <option >Ankara</option>
+            <option >İzmir</option>
+            <option >İstanbul</option>
+            <option >Batman</option>
+            <option >Ankara</option>
+            <option >İzmir</option>
+            <option >İstanbul</option>
+            <option >Batman</option>
+            <option >Ankara</option>
+            <option >İzmir</option>
+            <option >İstanbul</option>
+        </select> <br>
+
+        memleket neresi <br>
+
+        <select  name="memleket" size="5">
+
+            <optgroup label="DOĞU ANADOLU">
+                <option value="bat">erzurum</option>
+                <option  value="ank">kars</option>
+                <option value="izm">elazığ</option>
+            </optgroup>
+
+            <optgroup label="Marmara">
+                <option >İstanbul</option>
+                <option >tekirdağ</option>
+                <option >edirne</option>
+            </optgroup>
+       <optgroup label="İç Anadolu">    
+        <option >Ankara</option>
+        <option >Kahramanmaraş</option>
+        <option >Nevşehir</option></optgroup>
+        
+        </select>
+        <input type="number" id="sayi1" value="50"> sayısının karekökü  =
+        <output name="sonuc" for="sayi1"></output>
+        
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+        <input list="sehirler" />
+
+        <datalist id="sehirler">
+            <option value="Batman">
+            <option value="Ankara">
+            <option value="İstanbul">
+            <option value="İzmir">
+            <option value="Bursa">
+            <option value="Diyarbakır">
+ 
+        </datalist>
+
+<br><br>
+        <textarea cols="20" rows="10" >Sayfa ile ilgili görüş beyan ediniz</textarea>
+    </form>
+
+    <form oninput="sonuc.value = Math.sqrt( parseInt(sayi1.value))">
+
+     
+    </form>
+
+    <script>
+        
+        function ButunaBasildi(){
+
+            alert(document.getElementById("email2").value +" kaydedildi")
+        }
+
+
+    </script>
+  
+</body>
+</html>

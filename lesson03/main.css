@@ -1,0 +1,12 @@
+ .container{
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top:700px;
+    
+   
+ }
+
+ .container button{
+     margin: 20px;font-size: 40px;
+ }

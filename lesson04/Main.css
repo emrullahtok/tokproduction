@@ -1,0 +1,19 @@
+.icons{
+    background-color: rgb(69, 0, 133);
+    width: 80px;
+}
+
+.icons a{
+    display: block;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    transition: all ease 0.8s;
+}
+.icons a:hover{
+    background-color: red;
+}
+.icons a.active{
+    background-color: aliceblue; color: black;
+}
