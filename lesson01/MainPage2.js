@@ -1,1 +1,0 @@
-document.write("JS sayfa2")
